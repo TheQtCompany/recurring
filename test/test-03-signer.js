@@ -3,6 +3,8 @@
 const qs = require('qs')
 const SignedQuery = require('../lib/signer').SignedQuery
 
+require('must/register')
+
 // For all tests the expected values are borrowed from recurly's own Ruby gem test suite.
   // Thus we can test that we're generating exactly the values recurly expects for its
   // form signatures.
